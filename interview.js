@@ -7,17 +7,17 @@ Person.prototype.output = function() {
     return `${this.name} has age ${this.age}`;
 }
 
-const firstGuy = new Person('Adam', 29);
+const firstGuy = new Person('Adam', 33);
 
 console.log(firstGuy);
 console.log(firstGuy.output());
 
-// 1. Will it break if I move Person to the bottom?
+// 1. Will it break if I move Person declaration to the bottom of the file?
 //  Why?
 
 // const secondGuy = Person('Stan', 25);
-// 2. What's the difference between first and secong guy?
-
+// 2. What's the difference between first and secong guy? Could you describe
+// how "new" works?
 
 // function executeOutput(output) {
 //     console.log(output());
