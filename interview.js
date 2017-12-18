@@ -26,3 +26,10 @@ console.log(firstGuy.output());
 // executeOutput(firstGuy.output);
 
 // 3. Why output is so strange? How to fix it?
+
+// 4. How to test output method? What if the implementation would be
+
+// Person.prototype.output = function() {
+// 	const name = this.getName();
+//     return `${this.name} has age ${this.age}`;
+// }
