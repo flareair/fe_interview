@@ -1,10 +1,10 @@
 function Person(name, age) {
-    this.name = name;
-    this.age = age;
+    this._name = name;
+    this._age = age;
 }
 
 Person.prototype.output = function() {
-    return `${this.name} has age ${this.age}`;
+    return `${this._name} has age ${this._age}`;
 }
 
 const firstGuy = new Person('Adam', 33);
@@ -31,5 +31,5 @@ console.log(firstGuy.output());
 
 // Person.prototype.output = function() {
 // 	const name = this.getName();
-//     return `${this.name} has age ${this.age}`;
+//     return `${this._name} has age ${this._age}`;
 // }
